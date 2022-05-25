@@ -139,9 +139,9 @@ function App() {
                 !project.error ?
                 project.project.items.map((item, index)=>{
                   // console.log(parseInt(item.height) + (item.y / item.rotation))
-                  if (item.rotation > 90 ) {
-                    return null
-                  }
+                  // if (item.rotation > 90 ) {
+                  //   return null
+                  // }
 
                   const [width, height] = getDimensions(item.width, item.height, item.rotation)
                   console.log(width, height)
